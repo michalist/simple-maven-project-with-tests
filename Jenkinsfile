@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('test') {
       parallel {
-        stage('test') {
+        stage('TEST MIKE') {
           steps {
-            echo 'Starting '
+            echo 'Starting  the championship'
           }
         }
-        stage('error') {
+        stage('ERROR MIKE') {
           steps {
             bat 'C:/apache-maven-3.5.2/bin/mvn.cmd test'
           }
