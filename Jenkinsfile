@@ -8,9 +8,9 @@ pipeline {
             echo 'Starting '
           }
         }
-        stage('') {
+        stage('error') {
           steps {
-            bat 'C:/Tools/Jenkins, Maven_E_16-2-18/apache-maven-3.5.2/bin/mvn.cmd test'
+            bat 'C:/apache-maven-3.5.2/bin/mvn.cmd test'
           }
         }
       }
